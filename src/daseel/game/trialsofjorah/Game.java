@@ -20,8 +20,9 @@ public class Game extends StateBasedGame {
 	@Override
 	public void initStatesList(GameContainer gc) throws SlickException {
 		// TODO Auto-generated method stub
-		
+		this.addState(new MainMenuScreen());
 		this.addState(new GameScreen());
+		
 	}
 	
 	public static void main(String[] args) throws SlickException{
