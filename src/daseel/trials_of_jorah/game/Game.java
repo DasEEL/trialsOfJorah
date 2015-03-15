@@ -1,0 +1,29 @@
+package daseel.trials_of_jorah.game;
+
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.state.StateBasedGame;
+
+public class Game extends StateBasedGame {
+
+	public Game(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void initStatesList(GameContainer gc) throws SlickException {
+		// TODO Auto-generated method stub
+		
+		//this.addState(state);
+	}
+	
+	public void main(String[] args) throws SlickException{
+		
+		AppGameContainer app = new AppGameContainer(new Game("The Trials Of Jorah"));
+		app.setDisplayMode(800, 600, false);
+		app.start();
+	}
+
+}
