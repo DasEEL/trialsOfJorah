@@ -10,12 +10,12 @@ import org.newdawn.slick.SpriteSheet;
  */
 public class Entity {
 
-	private Vector position;
-	private Vector size;
-	private Vector speed;
-	private Color color;
-	private SpriteSheet frames;
-	private Animation animation;
+	protected Vector position;
+	protected Vector size;
+	protected Vector speed;
+	protected Color color;
+	protected SpriteSheet frames;
+	protected Animation animation;
 
 	/*
 	 * Getters

@@ -19,12 +19,28 @@ abstract class Spell {
 
 	abstract void activate(Character character);
 
-	abstract void init(GameContainer gc, StateBasedGame sbg)
+	abstract void init(GameContainer gc, StateBasedGame sbg, Camera cam)
 			throws SlickException;
 
-	abstract void update(GameContainer gc, StateBasedGame sbg, int delta)
+	abstract void update(GameContainer gc, StateBasedGame sbg, int delta, Camera cam)
 			throws SlickException;
 
-	abstract void render(GameContainer gc, StateBasedGame sbg, Graphics g)
+	abstract void render(GameContainer gc, StateBasedGame sbg, Graphics g, Camera cam)
 			throws SlickException;
+
+	public int getImageWidth() {
+
+		return image.getWidth();
+	}
+
+	public Vector getPosition() {
+
+		return position;
+	}
+
+	public MouseOverArea getArea() {
+
+		return area;
+	}
+	
 }
